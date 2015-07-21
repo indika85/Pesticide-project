@@ -1,0 +1,9 @@
+ProductList.json: Neet to update the productList.json file for adding new products. Product name, file name, productID (optional) needs to be updated.
+
+appInfo.json: Application details are stored here. Name and version.
+
+pestInfo.json: Stores relationship between pests and products.
+
+appLables.js: translation lables used in the app are stores here.
+
+prosuct json files needs to be stored in projectData/DBFiles folder. Once new files are added productList.json and pestInfo.json files need to be updated.

@@ -1,0 +1,51 @@
+<!--Header section of the app -->
+       <ion-header-bar class="bar-balanced">
+           <!-- Back button -->
+           <a class="button button-balanced icon-left ion-chevron-left" ui-sref="searchBy">Back</a>
+        <h1 class="title">{{'pest_lable' | translate}}</h1>
+
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+      </ion-header-bar> 
+
+<div class="bar bar-subheader item-input-inset bar-light">
+
+        <!-- Search section -->
+        <lable class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" ng-model="query" placeholder="search">
+        </lable><!-- End of search-->
+
+      </div><!-- End of subheader-->
+
+
+<ion-content has-header="true">
+    <ion-list>
+        <div ng-repeat="pest in pestInfo | filter:query" >
+            <ion-item class="item-stable" ng-click="toggleGroup(pest)"
+                    ng-class="{active: isGroupShown(pest)}">
+                <i class="icon" ng-class="isGroupShown(pest) ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            {{pest.pestName}}
+            </ion-item>
+            <ion-item class="item-accordion item item-icon-right" href="#/productInfoMain/{{product.name}}"
+                    ng-repeat="product in pest.usedProducts"
+                    ng-show="isGroupShown(pest)">
+            {{product.name}}
+                <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+        
+        </div>
+    </ion-list>
+   
+</ion-content>
+ <ion-footer-bar class="bar-balanced tabs">
+     <div>
+          <a href="#/searchBy" class="button button-icon">
+          <i class="icon ion-ios-search-strong"></i>
+          {{'newSearch_lable' | translate}}
+          </a>
+        </div>
+</ion-footer-bar>

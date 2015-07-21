@@ -1,0 +1,62 @@
+<!-- Product information page -->
+<!--Header section of the page -->
+<ion-header-bar class="bar-balanced">
+        <a class="button button-balanced icon-left ion-chevron-left" ng-click="goBack()">Back</a>
+        <!-- Display the title of the app in the header -->
+        <h4 class="title">{{'productInfo_lable' | translate}} : {{productInfo.product}}</h4>
+          
+          <!--Language toggle button -->
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+</ion-header-bar>
+
+<ion-content>
+    <ion-list>
+        <ion-item class="item-text-wrap">
+            <h3>{{'epa_lable'|translate}}:</h3><p>{{productInfo.epa}}</p>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'producer_lable'|translate}}:</h3><p>{{productInfo.producer}}</p>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'address_lable'|translate}}:</h3><p>{{productInfo.address}}</p>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'phone_lable'|translate}}:</h3><p>{{productInfo.phone}}</p>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'restricted_lable'|translate}}:</h3><p>{{productInfo.restricted}}</p>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'active_lable'|translate}}:</h3>
+            <div ng-repeat="active in productInfo.active">
+                <p>{{active.name}} : {{active.percent}}%</p>
+            </div>
+        </ion-item>
+        <ion-item class="item-text-wrap">
+            <h3>{{'inert_lable'|translate}}:</h3>
+            <div ng-repeat="inert in productInfo.inert">
+                <p>{{inert.name}} : {{inert.percent}}%</p>
+            </div>
+        </ion-item>
+         <ion-item class="item-text-wrap">
+            <h3>{{'arsenic_lable'|translate}}:</h3>
+            <p>{{'percent_lable'|translate}} : {{productInfo.arsenic.percent}}</p>
+            <p>{{'elemental_lable'|translate}} : {{productInfo.arsenic.elemental}}</p>
+        </ion-item>
+    </ion-list>
+    
+</ion-content>
+
+
+<ion-footer-bar class="bar-balanced">
+    <div class="button-bar">
+        <a class="button icon icon-left ion-ios-arrow-left" title="Previous" href="#" disabled="true">{{'previous_lable'|translate}}</a>
+        <a class="button icon ion-ios-home" title="Home" href="#/productInfoMain/{{productName}}">{{'home_lable'|translate}}</a>
+        <a class="button icon ion-ios-search" title="Search" href="#/searchBy">{{'newSearch_lable'|translate}}</a>
+        <a class="button icon icon-right ion-ios-arrow-right" title="Next" href="#/productInfoHealth/{{productName}}">{{'next_lable'|translate}}</a>
+    </div>
+    
+</ion-footer-bar>

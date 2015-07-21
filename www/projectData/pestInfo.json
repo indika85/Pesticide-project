@@ -1,0 +1,104 @@
+[
+  {
+    "pestName":"Codling moth",
+    "usedProducts" : [
+        {
+            "_id":"L2WWaDXe52f9zp7Nq",
+            "name":"Basic Copper 53"
+        },
+        {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+        },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  },
+{
+    "pestName":"Spider mites",
+    "usedProducts" : [
+         {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+         },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  },
+    {
+    "pestName":"Pear rust mite",
+    "usedProducts" : [
+        {
+            "_id":"L2WWaDXe52f9zp7Nq",
+            "name":"Basic Copper 53"
+        },
+        {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+        }
+    
+    ]
+  },
+    {
+    "pestName":"Woolly apple aphid",
+    "usedProducts" : [
+         {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+         },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  },
+    {
+    "pestName":"Leafrollers",
+    "usedProducts" : [
+         {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+         },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  },
+  {
+    "pestName":"Pear psylla",
+    "usedProducts" : [
+         {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+         },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  },
+  {
+    "pestName":"Fireblight",
+    "usedProducts" : [
+         {
+            "_id":"L2WWaDXe52f9zpzzq",
+            "name":"Calypso 4F"
+         },
+        {
+            "_id":"L2WWaDXe52f9457Nq",
+            "name":"Calypso 4F sample 2"
+        }
+    
+    ]
+  }
+]

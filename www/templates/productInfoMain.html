@@ -1,0 +1,45 @@
+<!--Header section of the app -->
+      <ion-header-bar class="bar-balanced">
+        <a class="button button-balanced icon-left ion-chevron-left" ng-click="goBack()">Back</a>
+        <!-- Display the title of the app in the header -->
+        <h1 class="title">{{productName}}</h1>
+          
+          <!--Language toggle button -->
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+      </ion-header-bar>
+<ion-content>
+    <ion-list>
+        <ion-item class="item item-icon-right" href="#/productInfoInfo/{{productName}}">
+            {{'productInfo_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item item-icon-right" href="#/productInfoHealth/{{productName}}">
+            {{'healthInfo_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item item-icon-right" href="#/productInfoFirstAid/{{productName}}">
+            {{'firstAid_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item item-icon-right" href="#/productInfoPPE/{{productName}}">
+            {{'PPE_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item item-icon-right" href="#/productInfoEngControl/{{productName}}">
+            {{'engineeringControls_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item item-icon-right" href="#/productInfoCredits/{{productName}}">
+            {{'creditsAndLinks_lable' | translate}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer-bar class="bar-balanced">
+    <div class="button-bar">
+            <a class="button icon ion-ios-search" title="Search" href="#/searchBy">{{'newSearch_lable'|translate}}</a>
+    </div>
+</ion-footer-bar>

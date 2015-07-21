@@ -1,0 +1,21 @@
+<!--Header section of the app -->
+      <ion-header-bar class="bar-balanced">
+        <!-- Display the title of the app in the header -->
+        <h1 class="title">{{appInfo.appName}}</h1>
+          
+          <!--Language toggle button -->
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+      </ion-header-bar>
+
+
+<ion-content>
+    <div class="padding">
+        <h4>{{'searchBy_lable' | translate}}</h4>
+        <a class="button button-full button-balanced" href="#/productList">{{'product_lable' | translate}}</a>
+        <a class="button button-full button-balanced" href="#/pests">{{'pest_lable' | translate}}</a>
+            
+    </div>    
+</ion-content>

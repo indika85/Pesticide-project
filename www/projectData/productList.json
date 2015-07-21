@@ -1,0 +1,22 @@
+[
+  {
+    "productName":"Basic Copper 53",
+    "_id" : "L2WWaDXe52f9zp7Nq",
+    "fileName":"BasicCopper53.json"
+  },
+  {
+    "productName":"Calypso 4F",
+    "_id" : "L2WWaDXe52f9zpzzq",
+    "fileName":"calypso.json"
+  },
+  {
+    "productName":"Calypso 4F sample 1",
+    "_id" : "L2WWaDzz52f9zp7Nq",
+    "fileName":"calypso1.json"
+  },
+  {
+    "productName":"Calypso 4F sample 2",
+    "_id" : "L2WWaDXe52f9457Nq",
+    "fileName":"calypso2.json"
+  }
+]

@@ -1,0 +1,36 @@
+<!-- Product List page -->
+<!--Header section of the page -->
+       <ion-header-bar class="bar-balanced">
+           <!-- Back button -->
+           <a class="button button-balanced icon-left ion-chevron-left" ui-sref="searchBy">Back</a>
+        <h1 class="title">{{'product_lable' | translate}}</h1>
+
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+      </ion-header-bar> 
+
+
+<div class="bar bar-subheader item-input-inset bar-light">
+
+        <!-- Search section -->
+        <lable class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" ng-model="query" placeholder="search">
+        </lable><!-- End of search-->
+
+      </div><!-- End of subheader-->
+
+
+<ion-content class="padding has-subheader">
+
+        <!--Lis of products-->
+        <ion-list>
+          <ion-item class="item item-icon-right" ng-repeat="product in products | filter:query" item="product" href="#/productInfoMain/{{product.productName}}" ng-click="setCrProduct({{'product.productName'}})">
+           {{product.productName}}
+           <i class="icon ion-chevron-right icon-accessory"></i>   
+          </ion-item>
+        </ion-list>
+
+</ion-content>

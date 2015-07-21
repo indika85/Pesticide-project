@@ -1,0 +1,46 @@
+      <!--Header section of the app -->
+      <ion-header-bar class="bar-royal">
+        <!-- Display the title of the app in the header -->
+        <h1 class="title">Pesticide Info</h1>
+      </ion-header-bar>
+
+      <!--Sub header section of the app-->
+      <div class="bar bar-subheader item-input-inset bar-light">
+
+        <!-- Search section -->
+        <lable class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" ng-model="query" placeholder="search">
+        </lable><!-- End of search-->
+
+        <!-- Toggle language button -->
+        <!--
+        <button class="button button-block button-royal" ng-click="toggleLan = !toggleLan"><span ng-show="toggleLan">Change to Eng</span><span ng-hide="toggleLan">Change to Spn</span></button>
+        -->
+      </div><!-- End of subheader-->
+
+      <!-- the body content of the app-->
+      <ion-content class="padding has-subheader">
+
+        <!--Display buttons for changing language -->
+        <!--
+        <div class="button-bar">
+          <button class="button button-royal button-block">English</button>
+          <button class="button button-royal button-block">Spanish</button>
+        </div>
+        -->
+
+        <!-- Disclaimer -->
+        <p>Disclaimer:</p>
+
+        <!--Lis of xxxx-->
+        <ion-list>
+          <ion-item ng-repeat="item in products | filter:query">
+            <h2>Product name: {{item.product}}</h2>
+
+          </ion-item>
+        </ion-list>
+
+        <!--<lable id="xxx">content</lable> -->
+
+      </ion-content>

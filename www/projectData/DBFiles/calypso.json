@@ -1,0 +1,56 @@
+{
+    "_id" : "L2WWaDXe52f9zpzzq", 
+  "product":"Calypso 4F",
+  "active":[
+    {
+      "name":"thiacloprid",
+      "percent":40.4
+    }
+  ],
+  "inert":[
+    {
+      "name":"n/a",
+      "percent":59.6
+    }
+  ],
+  "arsenic":{
+    "percent":0,
+    "elemental":0
+  },
+  "epa":"264-806",
+  "producer":"Bayer CropScience LP",
+  "address":"P.O. Box 12014, 2 T.W. Alexander Drive, Research Triangle Park, North Carolina 27709",
+  "phone":"1-800-334-7577",
+  "establishment":"",
+  "restricted":"no",
+  "uncertified_instruction":"",
+  "hazard_stmt":"May be fatal if swallowed. Harmful if inhaled or absorbed through the skin. Prolonged or frequently repeated skin contact may cause allergic reactions in some individuals. Avoid breathing spray mist. Avoid contact with the eyes, skin or clothing.",
+  "child_warning":"yes",
+  "toxicity":"",
+  "signal_eng":"WARNING",
+  "signal_esp":"AVISO",
+  "first_aid":{
+    "IF SWALLOWED":"• Immediately call a poison control center or doctor for treatment advice. \n• Do not induce vomiting unless told to do so by a poison control center or doctor. \n• Have person sip a glass of water if able to swallow. \n• Do not give anything by mouth to an unconscious person.",
+    "IF ON SKIN OR CLOTHING":"• Take off contaminated clothing. \n• Rinse skin immediately with plenty of water for 15-20 minutes. \n• Call a poison control center or doctor for treatment advice.",
+    "IF INHALED":"• Move person to fresh air. \n• If person is not breathing, call 911 or an ambulance, then give artificial respiration, preferably mouth-to-mouth if possible. \n• Call a poison control center or doctor for further treatment advice.",
+    "IF IN EYES":"• Hold eye open and rinse slowly and gently with water for 15-20 minutes. \n• Remove contact lenses, if present, after the first 5 minutes, then continue rinsing. \n• Call a poison control center or doctor for treatment advice. \nFor MEDICAL Emergencies Call 24 Hours A Day 1-800-334-7577. \nHave the product container or label with you when calling a poison control center or doctor or going for treatment."
+  },
+  "physician_notes":{
+    "note":"No specific antidote is available. Treat the patient symptomatically.",
+    "acute_effects":"May be fatal if swallowed. Harmful if inhaled or absorbed through the skin. Prolonged or frequently repeated skin contact may cause allergic reactions in some individuals."
+  },
+  "prevention":"Users should: \n• Wash hands before eating, drinking, chewing gum, using tobacco or using the toilet. \n• Remove clothing immediately if pesticide gets inside. Then wash thoroughly and put on clean clothing. \n• Remove PPE immediately after handling this product. Wash the outside of gloves before removing. As soon as possible, wash thoroughly and change into clean clothing.",
+  "special_class":"neonicotinyl",
+  "resistant_material":"waterproof nmaterial such as Nitrile, Butyl, Neoprene and/or Barrier Laminate",
+  "app_protect":{
+    "clothes":"long-sleeved shirt and long pants",
+    "gloves":"chemical-resistant gloves",
+    "footware":"shoes plus socks"
+  },
+  "entry_protect":{
+    "clothes":"coveralls",
+    "gloves":"Chemical-resistant gloves made out of any waterproof material",
+    "footware":"shoes plus socks"
+  },
+  "rei":"12 hours"
+}

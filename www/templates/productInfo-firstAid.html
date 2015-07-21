@@ -1,0 +1,27 @@
+<!-- 1st AID page -->
+<!--Header section of the app -->
+      <ion-header-bar class="bar-balanced">
+        <a class="button button-balanced icon-left ion-chevron-left" ng-click="goBack()">Back</a>
+        <!-- Display the title of the app in the header -->
+        <h4 class="title">{{'firstAid_lable' | translate}} : {{productName}}</h4>
+          
+          <!--Language toggle button -->
+          <button class="button button-balanced" ng-click="toggleLan = !toggleLan; ChangeLanguage(toggleLan)">
+              <span ng-show="toggleLan" >EN</span>
+              <span ng-hide="toggleLan" >ES</span>
+          </button>
+      </ion-header-bar>
+<ion-content>
+
+</ion-content>
+
+
+<ion-footer-bar class="bar-balanced">
+    <div class="button-bar">
+        <a class="button icon icon-left ion-ios-arrow-left" title="Previous" href="#/productInfoHealth/{{productName}}">{{'previous_lable'|translate}}</a>
+        <a class="button icon ion-ios-home" title="Home" href="#/productInfoMain/{{productName}}">{{'home_lable'|translate}}</a>
+        <a class="button icon ion-ios-search" title="Search" href="#/searchBy">{{'newSearch_lable'|translate}}</a>
+        <a class="button icon icon-right ion-ios-arrow-right" title="Next" href="#/productInfoPPE/{{productName}}">{{'next_lable'|translate}}</a>
+    </div>
+    
+</ion-footer-bar>
